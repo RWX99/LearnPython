@@ -4,7 +4,7 @@ from sklearn import tree
 from sklearn.metrics import accuracy_score
 from matplotlib import pyplot as plt
 
-data = pd.read_csv('iris.csv')
+data = pd.read_csv('data/iris.csv')
 
 x = data.drop(['label'], axis=1)
 y = data.loc[:, 'label']

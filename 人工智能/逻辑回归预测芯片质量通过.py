@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
-data = pd.read_csv('chip_test.csv')
+data = pd.read_csv('data/chip_test.csv')
 # print(data.head())
 
 mask = data.loc[:, 'pass'] == 1

@@ -5,7 +5,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 from sklearn.preprocessing import PolynomialFeatures
 
-data_train = pd.read_csv('T-R-train.csv')
+data_train = pd.read_csv('data/T-R-train.csv')
 x_train = data_train.loc[:, 'T']
 y_train = data_train.loc[:, 'rate']
 
@@ -20,7 +20,7 @@ x_train = np.array(x_train).reshape(-1, 1)
 lr1 = LinearRegression()
 lr1.fit(x_train, y_train)
 
-data_test = pd.read_csv('T-R-test.csv')
+data_test = pd.read_csv('data/T-R-test.csv')
 x_test = data_test.loc[:, 'T']
 y_test = data_test.loc[:, 'rate']
 

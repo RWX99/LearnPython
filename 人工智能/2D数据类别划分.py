@@ -6,7 +6,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.cluster import MeanShift, estimate_bandwidth
 
-data = pd.read_csv('data.csv')
+data = pd.read_csv('data/data.csv')
 
 x = data.drop(['labels'], axis=1)
 y = data.loc[:, 'labels']

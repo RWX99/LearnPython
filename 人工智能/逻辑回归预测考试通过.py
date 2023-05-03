@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import accuracy_score
 
-data = pd.read_csv('examdata.csv')
+data = pd.read_csv('data/examdata.csv')
 # print(data.head())
 
 # fig1 = plt.figure()

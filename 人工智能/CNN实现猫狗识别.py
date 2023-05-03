@@ -29,7 +29,7 @@ model.add(Dense(units=1, activation='sigmoid'))
 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
 # print(model.summary())
 
-model.fit_generator(training_set, epochs=25)
+model.fit(training_set, epochs=25)
 
 accuracy = model.evaluate_generator(training_set)
 
